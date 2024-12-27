@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+
+    android:background="@drawable/login_background"
+    tools:context=".Activity.IntroActivity">
+
+    <ImageView
+        android:id="@+id/tv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/image"
+        android:src="@drawable/ic_circles" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/seeto_banner_background"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/tv_logo"
+                android:layout_width="80dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_small_logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/app_title_seeto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="-13dp"
+                android:text="Seeto"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/tv_logo"
+                app:layout_constraintTop_toTopOf="@id/tv_logo" />
+
+            <TextView
+                android:id="@+id/app_subtitle_seeto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-15dp"
+                android:gravity="center"
+                android:text="manage currencies effortlessly"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_logo" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/swip_shape_rounded"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:orientation="horizontal"
+                >
+                <FrameLayout
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginStart="5dp"
+
+                    android:background="@drawable/inner_btn_blue_rounded"
+                    >
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_small_arrows"
+                    />
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/text_swip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Swip to Skip"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="40dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    />
+
+                <FrameLayout
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginStart="55dp"
+                    android:background="@drawable/inner_btn_blue_rounded"
+                    >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_mini_ogo"
+                        />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/seeto_banner_background"
+            android:gravity="center">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/apple_btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/ic_pple"
+                android:text="@string/apple"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:contextClickable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/google_btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/google"
+                android:backgroundTint="@color/white"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_google"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/apple_btn" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/slagon"
+                android:textSize="20sp"
+               android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/secondaryTextColor"
+                app:layout_constraintTop_toBottomOf="@id/google_btn"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

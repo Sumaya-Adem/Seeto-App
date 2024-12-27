@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SeetoApp</string>
+    <string name="image_logo">Image Logo</string>
+    <string name="apple">Continue with Apple</string>
+    <string name="google">Continue with Google</string>
+    <string name="slagon">fast, easy and secure.</string>
+    <string name="image">The image </string>
+    <string name="balance">Balance</string>
+    <string name="default_web_client_id">YOUR_WEB_CLIENT_ID_HERE</string>
+
+</resources>

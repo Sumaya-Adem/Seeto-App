@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:id="@+id/transactions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See More"
+            android:textColor="@color/theLightBlue"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="175dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/seemore_vector"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="19dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="382dp"
+        android:layout_height="171dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/light_grey_walletmpesa_first_backgrd">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:background="@drawable/darkgray_wallet_boeder"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/small_circle_blue"
+                android:src="@drawable/image52"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wallet"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/black_arrow"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mpesa"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="86dp"
+                android:layout_height="33dp"
+                android:background="@drawable/complete_green_border"
+                android:layout_marginStart="30dp"
+
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/middle_green"
+                    android:text="Complete"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"
+                     />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="165dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="18dp"
+                android:orientation="vertical"
+                android:background="@drawable/darkgray_wallet_boeder">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="You Sent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1000 USD"
+                    android:textStyle="bold"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="165dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/darkgray_wallet_boeder">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="You Recieve"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/ic_i_filled"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12,9000 KES"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

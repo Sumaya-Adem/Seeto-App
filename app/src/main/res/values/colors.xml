@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#0C90F1</color>
+    <color name="colorPrimaryDark">#0591F8</color>
+    <color name="colorAccent">#0C90F1</color>
+
+
+    <color name="theBlue">#0046FF</color>
+    <color name="lightPurple">#E5ECFF</color>
+    <color name="theLightBlue">#547AFF</color>
+    <color name="insidecardlinear">#90AFFF</color>
+
+    <color name="theOrange">#FF3D3D</color>
+    <color name="theLightOrange">#FF7D54</color>
+
+    <color name="light_grey">#EAEAEA</color>
+    <color name="laterGray">#F4F4F4</color>
+    <color name="lightGray">#EAEBED</color>
+    <color name="darkGray">#8F8F8F</color>
+    <color name="transparence">#90AFFF</color>
+
+    <color name="wallet_mpesa_background">#EEF3FF</color>
+    <color name="wallet_mpese_inside">#DFE8FF</color>
+    <color name="wallet_mpesa_border">#DAE4FF</color>
+    <color name="cccccc">#ECE7FF</color>
+
+    <color name="dark_red">#E80337</color>
+    <color name="pink_red">#FF8EA7</color>
+    <color name="lightPink">#FFE5EB</color>
+
+
+    <color name="dark_green">#004852</color>
+    <color name="middle_green">#609E19</color>
+    <color name="light_green">#EBFFD3</color>
+
+<color name="dotos">#18194B</color>
+
+
+    <color name="secondaryTextColor">#8391A1</color>
+    <color name="btnTextColor">#121212</color>
+</resources>

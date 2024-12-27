@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "947088004495",
+    "project_id": "seetoapp-56e09",
+    "storage_bucket": "seetoapp-56e09.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947088004495:android:fa44c425077897bb61e7fa",
+        "android_client_info": {
+          "package_name": "com.example.seetoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "947088004495-t0noq1onakrt9gs1r1imvlsqpiaa3dli.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.seetoapp",
+            "certificate_hash": "b5938e50e9fdda3d2dca66543fa189ea7877e3a8"
+          }
+        },
+        {
+          "client_id": "947088004495-baevld3v080p3o9vs3ih09jbdpmko5tp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVbp0MFCdiq3jKWHOcpMk6wXT0Rdf-q84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "947088004495-baevld3v080p3o9vs3ih09jbdpmko5tp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

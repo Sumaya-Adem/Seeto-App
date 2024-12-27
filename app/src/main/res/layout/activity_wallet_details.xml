@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:layout_marginStart="5dp"
+    tools:context=".WalletDetailsActivity">
+    <ScrollView
+        android:id="@+id/wallet_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/light_grey_cirlcle"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/sign_out"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/arrow_back_icon" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="13dp"
+                    android:text="Wallet Detail"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="100dp"
+                    android:background="@drawable/light_grey_cirlcle"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/add_icon" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="60dp"
+                android:orientation="vertical">
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="220dp"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none">
+
+                <include layout="@layout/mastercard_size" />
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="105dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="185dp"
+                    android:layout_height="105dp"
+                    android:background="@drawable/wallet_mpesa_first_background_radious">
+
+                    <LinearLayout
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/deposit_withdrow_blue_square"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_add_white" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="70dp"
+                        android:text="Deposit"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="185dp"
+                    android:layout_height="105dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/wallet_mpesa_first_background_radious">
+
+                    <LinearLayout
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/deposit_withdrow_blue_square"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/bank_card" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="70dp"
+                        android:text="Withdrowal"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="382dp"
+                android:layout_height="171dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/wallet_mpesa_first_background_radious"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/wallet_pesa_border"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/small_circle_blue"
+                        android:src="@drawable/image52" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:text="Wallet"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/black_arrow" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:text="Mpesa"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="86dp"
+                        android:layout_height="33dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/wallet_pesa_progress_blue_border">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="In Progress"
+                            android:textColor="@color/theBlue"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="165dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/wallet_pesa_border"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="5dp"
+                            android:text="You Sent"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="5dp"
+                            android:text="1000 USD"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="165dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/wallet_pesa_border"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:text="You Recieve"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/ic_i_filled" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="12,9000 KES"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/transactions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="8dp"
+                        android:text="History"
+                        android:textColor="@color/black"
+                        android:textSize="21sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="230dp"
+                        android:layout_marginTop="8dp"
+                        android:text="See All"
+                        android:textColor="@color/darkGray"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="390dp"
+                    android:layout_height="171dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/light_grey_walletmpesa_first_backgrd"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="350dp"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/darkgray_wallet_boeder"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/small_circle_blue"
+                            android:src="@drawable/image52" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:text="Wallet"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/black_arrow" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:text="Mpesa"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="86dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/complete_green_border">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:text="Complete"
+                                android:textColor="@color/middle_green"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="165dp"
+                            android:layout_height="63dp"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/darkgray_wallet_boeder"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="5dp"
+                                android:text="You Sent"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="5dp"
+                                android:text="1000 USD"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="165dp"
+                            android:layout_height="63dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/darkgray_wallet_boeder"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="You Recieve"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:src="@drawable/ic_i_filled" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:text="12,9000 KES"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="382dp"
+                    android:layout_height="171dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/light_grey_walletmpesa_first_backgrd"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="350dp"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/darkgray_wallet_boeder"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/small_circle_blue"
+                            android:src="@drawable/image52" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:text="Wallet"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/black_arrow" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:text="Mpesa"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="86dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/cancel_red_border">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="5dp"
+                                android:text="Cancel"
+                                android:textColor="@color/dark_red"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="165dp"
+                            android:layout_height="63dp"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/darkgray_wallet_boeder"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="5dp"
+                                android:text="You Sent"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="5dp"
+                                android:text="1000 USD"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="165dp"
+                            android:layout_height="63dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/darkgray_wallet_boeder"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="You Recieve"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:src="@drawable/ic_i_filled" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:text="12,9000 KES"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
